@@ -7,10 +7,26 @@ public class EsyaDenetleyici : MonoBehaviour
     public List<Transform> geçerliBýrakmaYerleri = new List<Transform>();
 
     private Vector3 sonGecerliPozisyon;
+    private EsyaVerisi veri;
 
     private void Start()
     {
-        sonGecerliPozisyon = transform.position; // Ýlk konumu kaydet
+        sonGecerliPozisyon = transform.position;
+        veri = GetComponent<EsyaVerisi>();
+
+        if (veri == null)
+        {
+            Debug.LogWarning("EsyaVerisi scripti bu objede eksik!");
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        // Týklanma anýnda flashback göster
+        if (veri != null)
+        {
+            FlashbackYoneticisi.Ornek.FlashbackGoster(veri.flashbackMetni);
+        }
     }
 
     private void OnMouseUp()
@@ -30,18 +46,12 @@ public class EsyaDenetleyici : MonoBehaviour
 
         if (enYakinYer != null)
         {
-            // Geçerli yere býrakýldý
             transform.position = enYakinYer.position;
             sonGecerliPozisyon = enYakinYer.position;
-
             Debug.Log("Doðru yere býrakýldý");
-
-            // Flashback çaðrýsý buraya!
-            FlashbackYoneticisi.Ornek.FlashbackGoster("Bu eþya eski bir anýyý hatýrlattý...");
         }
         else
         {
-            // Geçersiz yere býrakýldý
             transform.position = sonGecerliPozisyon;
             Debug.Log("Geçersiz yere býrakýldý, geri dönüldü");
         }
