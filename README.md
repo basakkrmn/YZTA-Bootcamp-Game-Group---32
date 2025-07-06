@@ -74,27 +74,26 @@ Gerçekleşen Puan: 100 puan
 *Daily Scrum*
 
 - Takım üyeleri olarak WhatsApp üzerinden iletişim sağladık, iki-üç günde bir durumumuzu konuşmak için slack üzerinden toplantı gerçekleştirdik.
-- İlk hafta tanışma roller ve proje fikri üzerine konuşmalar yapılmıştır.
-- İkinci hafta proje fikri kararlaştırılmış, görevler high level olarak atanmıştır.
+- İlk hafta tanışma, roller ve proje fikri üzerine konuşmalar yapılmıştır.
+- İkinci hafta proje fikri kararlaştırılmış, görevler atanmıştır.
 - Genellikle akşam saatlerinde iletişim kurulmuştur.
 - İletişim Kanalları: WhatsApp grubu ve Slack'tir.
-(Not: Ekran görüntüleri teslim dosyasına ayrıca eklenecektir.)
 
 *Sprint Board Updates*
-- Trello üzerinden sprint planlaması başlatılmıştır.
+- Trello üzerinden sprint planlaması başlatılmış ve takip edilmiştir.
 - (Sprint Board ekran görüntüsü ayrıca eklenecek.)
 
 *Oyunun Durumu*
 - Oyunun fikir ve ilk tasarım aşaması tamamlanmıştır.
 - Unity üzerinden temel mekanikler yapılmaya başlanmıştır.
-- İş bölümü high-level (genel düzeyde) yapılmıştır.
+- İş bölümü doğrultusunda çalışmalar başlamıştır.
 
 *Sprint Review*
 
 Bu sprintte yapılanlar:
 - Proje fikrine karar verildi: Hikaye odaklı, psikolojik-gerilim içeren bir oyun.
 - Unity üzerinden temel oynanış mekanikleri yapılmaya başlandı.
-- Takım üyeleri arasındaki görev paylaşımı yapıldı (high-level).
+- Takım üyeleri arasındaki görev paylaşımı yapıldı.
 - İletişim kanalları netleştirildi.
 - Trello kurulumu ve yönetimi yapıldı.
 
