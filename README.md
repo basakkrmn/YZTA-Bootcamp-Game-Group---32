@@ -21,7 +21,7 @@
 
 
 ##   Oyunun İsmi
-*?*
+*Silent Echoes*
 
 ## Oyunun Logosu
 
