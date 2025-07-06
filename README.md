@@ -6,7 +6,7 @@
 
 ## Takım Logosu
 
-![Takım Logo](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/GlassRoomInteractiveLogo.png)
+![Takım Logo](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/GlassRoomInteractiveTeamLogo.png)
 
 ## Takım Elemanları
 
