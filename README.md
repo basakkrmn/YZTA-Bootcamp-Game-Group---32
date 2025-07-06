@@ -15,7 +15,7 @@
 | <div align="center">Name</div>   | <div align="center">Title</div>  |  
 | :---------- | :---------- | 
 | Mert Taşkın | Product Owner/Scrum Master |
-| Başak Kahraman| Developer |
+| Başak Karaman| Developer |
 | Berfu Tulgar| Developer |
 | Fundanur Öztürk| Developer |
 
