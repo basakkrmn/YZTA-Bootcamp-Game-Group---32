@@ -25,7 +25,7 @@
 
 ## Oyunun Logosu
 
-![Mindtrack Logo](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/GlassRoomInteractiveLogo.png)
+![Silent Echoes Logo](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/SilentEchoesLogo.jpg)
 
 ## Oyunun Açıklaması
 
@@ -59,8 +59,6 @@ Oyunun son sahnesinde, evin atmosferi yavaş yavaş dağılmaya başlar. Renkler
 - Hedeflediğimiz çıkış platformu Steam’dir.
 - Oyunumuzun başlangıç fiyatı 5-10$ aralığında belirlenmiştir.
 
-## Product Backlog URL
-
 ## Sprint 1 Raporu
 
 *Sprint İçinde Tamamlanması Tahmin Edilen Puan*
@@ -82,6 +80,10 @@ Gerçekleşen Puan: 100 puan
 *Sprint Board Updates*
 - Trello üzerinden sprint planlaması başlatılmış ve takip edilmiştir.
 - (Sprint Board ekran görüntüsü ayrıca eklenecek.)
+
+*Sprint 1 Screenshot:*
+
+![Sprint 1](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/Sprint%201.png)
 
 *Oyunun Durumu*
 - Oyunun fikir ve ilk tasarım aşaması tamamlanmıştır.
