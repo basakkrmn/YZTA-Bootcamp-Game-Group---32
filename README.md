@@ -4,9 +4,9 @@ Takım Logosu -
 Takım Elemanları
 
 Mert Taşkın - Scrum Master/Product Owner
-Başak Kahraman - Developer
+Başak Karaman - Developer
 Berfu Tulgar - Developer
-Fundanur Öztür - Developer
+Fundanur Öztürk - Developer
 
 
 Oyun İsmi - 
