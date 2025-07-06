@@ -65,7 +65,7 @@ Oyunun son sahnesinde, evin atmosferi yavaş yavaş dağılmaya başlar. Renkler
 Tahmin Edilen Tamamlanacak Puan: 100 puan
 Gerçekleşen Puan: 100 puan
 
-*Tahmin Mantığ*
+*Tahmin Mantığı*
 - Proje toplamda 300 puan olarak planlandı. Başlangıçta bu puan üç eşit sprint’e (100-100-100) bölündü.
 - Sprint 1'de yapılması gereken etapları tamamlayıp, 100 puana ulaştık.
 
