@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class EsyaDenetleyici : MonoBehaviour
 {
-    [Header("Sadece Bu Býrakma Yerlerine Ýzin Verilir")]
-    public List<Transform> geçerliBýrakmaYerleri = new List<Transform>();
+    [Header("Geçerli Býrakma Noktalarý")]
+    public List<Transform> geçerliBýrakmaYerleri;
 
     private Vector3 sonGecerliPozisyon;
     private EsyaVerisi veri;
@@ -16,21 +16,29 @@ public class EsyaDenetleyici : MonoBehaviour
 
         if (veri == null)
         {
-            Debug.LogWarning("EsyaVerisi scripti bu objede eksik!");
+            Debug.LogWarning("EsyaVerisi scripti eksik!");
         }
     }
 
     private void OnMouseDown()
     {
-        // Týklanma anýnda flashback göster
-        if (veri != null)
+        if (veri == null || FlashbackYoneticisi.Ornek == null)
+            return;
+
+        // Flashback daha önce oynatýlmadýysa, þimdi oynat
+        if (!veri.flashbackOynatildi)
         {
+            veri.flashbackOynatildi = true;
             FlashbackYoneticisi.Ornek.FlashbackGoster(veri.flashbackMetni);
         }
     }
 
+
     private void OnMouseUp()
     {
+        if (FlashbackYoneticisi.Ornek != null && FlashbackYoneticisi.Ornek.flashbackAktif)
+            return;
+
         float minimumMesafe = 0.8f;
         Transform enYakinYer = null;
 
@@ -53,7 +61,7 @@ public class EsyaDenetleyici : MonoBehaviour
         else
         {
             transform.position = sonGecerliPozisyon;
-            Debug.Log("Geçersiz yere býrakýldý, geri dönüldü");
+            Debug.Log("Geçersiz yere býrakýldý");
         }
     }
 }
