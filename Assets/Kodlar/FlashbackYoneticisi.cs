@@ -10,9 +10,10 @@ public class FlashbackYoneticisi : MonoBehaviour
     public GameObject flashbackPanel;
     public TMP_Text flashbackYazi;
 
+    public bool flashbackAktif { get; private set; }
+
     private void Awake()
     {
-        // Singleton örneði
         if (Ornek == null)
         {
             Ornek = this;
@@ -22,27 +23,24 @@ public class FlashbackYoneticisi : MonoBehaviour
             Destroy(gameObject);
         }
 
-        flashbackPanel.SetActive(false); // Panel baþlangýçta gizli
+        flashbackPanel.SetActive(false);
+        flashbackAktif = false;
     }
 
-    /// <summary>
-    /// Verilen metni flashback panelinde gösterir.
-    /// </summary>
     public void FlashbackGoster(string mesaj)
     {
         StartCoroutine(FlashbackAkisi(mesaj));
     }
 
-    /// <summary>
-    /// Paneli açar, mesajý yazar, 3 saniye sonra kapatýr.
-    /// </summary>
     private IEnumerator FlashbackAkisi(string mesaj)
     {
+        flashbackAktif = true;
         flashbackPanel.SetActive(true);
         flashbackYazi.text = mesaj;
 
         yield return new WaitForSeconds(3f);
 
         flashbackPanel.SetActive(false);
+        flashbackAktif = false;
     }
 }

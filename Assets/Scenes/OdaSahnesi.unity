@@ -168,7 +168,8 @@ GameObject:
   - component: {fileID: 115846013}
   - component: {fileID: 115846012}
   - component: {fileID: 115846015}
-  - component: {fileID: 115846011}
+  - component: {fileID: 115846018}
+  - component: {fileID: 115846017}
   - component: {fileID: 115846016}
   m_Layer: 0
   m_Name: "OyuncakAy\u0131"
@@ -177,18 +178,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &115846011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115846010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 613779aa5ceb77e43ae62d8011c108a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &115846012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -344,6 +333,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &115846017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115846010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c369c7abdf80c4f8669134b8305be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &115846018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115846010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec92479f976834b44ac60fbb01b987b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashbackMetni: 
 --- !u!1 &121088172
 GameObject:
   m_ObjectHideFlags: 0

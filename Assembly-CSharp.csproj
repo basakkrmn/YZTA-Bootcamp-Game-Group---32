@@ -62,8 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\Kodlar\EsyaVerisi.cs" />
     <Compile Include="Assets\Kodlar\FlashbackYoneticisi.cs" />
-    <Compile Include="Assets\Kodlar\SürükleBirak.cs" />
     <Compile Include="Assets\Kodlar\EsyaDenetleyici.cs" />
+    <Compile Include="Assets\Kodlar\SurukleBirak.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
