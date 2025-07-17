@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Kodlar\EsyaVerisi.cs" />
     <Compile Include="Assets\Kodlar\FlashbackYoneticisi.cs" />
+    <Compile Include="Assets\2D Pixel Room Bedroom\Scripts\ClickAnim.cs" />
     <Compile Include="Assets\Kodlar\EsyaDenetleyici.cs" />
     <Compile Include="Assets\Kodlar\SurukleBirak.cs" />
   </ItemGroup>
