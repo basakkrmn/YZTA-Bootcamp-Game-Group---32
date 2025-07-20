@@ -118,7 +118,7 @@ Bu sprintte yapılanlar:
 İyileştirilmesi Gerekenler:
 - Trello daha efektif ve daha detaylı kullanılabilir.
 
-  ## Sprint 2 Raporu
+## Sprint 2 Raporu
 
 *Sprint İçinde Tamamlanması Tahmin Edilen Puan*
 Tahmin Edilen Tamamlanacak Puan: 100 puan
