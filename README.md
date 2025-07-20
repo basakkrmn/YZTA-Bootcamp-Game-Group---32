@@ -135,17 +135,20 @@ Gerçekleşen Puan: 100 puan
 - İletişim Kanalları: WhatsApp grubu ve Slack'tir.
 
 *Sprint Board Updates*
-- Trello üzerinden sprint planlaması başlatılmış ve takip edilmiştir.
-- (Sprint Board ekran görüntüsü ayrıca eklenecek.)
+- Trello üzerinden sprint planlaması takip edilmiştir.
 
-*Sprint 1 Screenshot:*
 
-![Sprint 1](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/Sprint%201.png)
+*Sprint 2 Screenshot:*
+
+![Sprint 2](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/Sprint%202%20Trello.png)
 
 *Oyunun Durumu*
 - Oyunun Temel Mekanikleri Tamamlanmıştır.
 - Oyuna 2D asset'ler entegre edilmeye başlanmıştır.
 - Oyunun senaryosu yazılmaya başlanmıştır.
+
+![Oyun Sahnesi](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/GameScene.png)
+  
 
 *Sprint Review*
 
@@ -167,7 +170,4 @@ Bu sprintte yapılanlar:
 - Oyunun mekanikleri uyumlu bir şekilde Unity içersinden yaratıldı.
 - İletişim kanalları etkin kullanıldı.
 - Herkesin aktif katılımı sağlandı.
-- İş bölümü ve rol dağılımı yapıldı.
 
-İyileştirilmesi Gerekenler:
-- 
