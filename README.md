@@ -59,6 +59,12 @@ Oyunun son sahnesinde, evin atmosferi yavaş yavaş dağılmaya başlar. Renkler
 - Hedeflediğimiz çıkış platformu Steam’dir.
 - Oyunumuzun başlangıç fiyatı 5-10$ aralığında belirlenmiştir.
 
+## Kullanılan Proje Yönetim Platformu
+
+Trello üzerinden sprint planlaması ve görev takibi yapılmıştır.
+
+Trello Proje Linki: (https://trello.com/b/rmpOAdhU/silent-echoes)
+
 ## Sprint 1 Raporu
 
 *Sprint İçinde Tamamlanması Tahmin Edilen Puan*
