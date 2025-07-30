@@ -598,6 +598,7 @@ GameObject:
   - component: {fileID: 377615096}
   - component: {fileID: 377615095}
   - component: {fileID: 377615094}
+  - component: {fileID: 377615099}
   - component: {fileID: 377615098}
   m_Layer: 0
   m_Name: watch
@@ -665,7 +666,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14976752, y: 0.124473095}
+  m_Offset: {x: -0.14976692, y: 0.124473095}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -676,7 +677,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7019913, y: 3.9887223}
+  m_Size: {x: 5.301092, y: 3.9887223}
   m_EdgeRadius: 0
 --- !u!212 &377615096
 SpriteRenderer:
@@ -752,12 +753,30 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377615093}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b48c7c57fd7c1a4ab508b8668584b11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hikayeIndex: 6
+--- !u!114 &377615099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377615093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bd44791499776438ad4602484ae700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gecerliBirakmaYerleri:
+  - {fileID: 1134273009}
+  - {fileID: 353476788}
+  - {fileID: 1826202288}
+  yakalamaMesafesi: 0.8
+  birakmaSesi: {fileID: 0}
 --- !u!1 &559637774
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +803,7 @@ Transform:
   m_GameObject: {fileID: 559637774}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 0.02, z: 0.048710693}
+  m_LocalPosition: {x: -0.06, y: 0.03, z: 0.048710693}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -943,7 +962,7 @@ Transform:
   m_GameObject: {fileID: 597552966}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.38, y: 3.07, z: 0}
+  m_LocalPosition: {x: 4.1, y: -2.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1097,7 +1116,7 @@ Transform:
   m_GameObject: {fileID: 625567278}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.41, y: 0.26, z: 0}
+  m_LocalPosition: {x: 4.41, y: 0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1415,11 +1434,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8644633956280247547, guid: 358eff632195583488809995b2c49051, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.58
+      value: -3.571
       objectReference: {fileID: 0}
     - target: {fileID: -8644633956280247547, guid: 358eff632195583488809995b2c49051, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 5.97
       objectReference: {fileID: 0}
     - target: {fileID: -8527324339593269966, guid: 358eff632195583488809995b2c49051, type: 3}
       propertyPath: m_Name
@@ -1492,6 +1511,14 @@ PrefabInstance:
     - target: {fileID: 4076733462008972839, guid: 358eff632195583488809995b2c49051, type: 3}
       propertyPath: m_SortingOrder
       value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813627483180647010, guid: 358eff632195583488809995b2c49051, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813627483180647010, guid: 358eff632195583488809995b2c49051, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.05
       objectReference: {fileID: 0}
     - target: {fileID: 9155925926749924781, guid: 358eff632195583488809995b2c49051, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2982,7 +3009,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 42
+  m_SortingOrder: 30
   m_Sprite: {fileID: 21300000, guid: 44101c1f4cefc91488b41029602124d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3396,7 +3423,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 50
+  m_SortingOrder: 48
   m_Sprite: {fileID: 21300000, guid: e937a9ded045fbc4b82c7087c5392f92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3694,7 +3721,7 @@ MonoBehaviour:
       splitting.\r\n The pain is taking over everything.\r\n They trusted me.\r                             
       \n I failed them.\r\n <b>I killed them. </b>\r\n"
     gorsel: {fileID: 21300000, guid: b8313d0e8cd84ea4eba57af401a35b19, type: 3}
-  - clip: {fileID: 8300000, guid: b3f78da37ff90af498da5c74ed5dd9a1, type: 3}
+  - clip: {fileID: 8300000, guid: beddac6a1099acd42bc64dc585bf9764, type: 3}
     subtitle: "A black hat.\r\n Did I\u2026 used to wear something like this?\r\n
       It\u2019s so simple.\r\nWait, I remember now.\r\n Nancy bought it for me.\r\nShe
       picked it up at a supermarket, on the way to our vacation.\r\n<b>A hero needs
@@ -3705,7 +3732,7 @@ MonoBehaviour:
       laughed so much.\r\n We were happy.\r\n<b>I\u2019ll laugh once more.\r\nI\u2019ll
       be happy again, when I\u2019ve avenged them.</b>\r\n"
     gorsel: {fileID: 21300000, guid: 87aabe30938407f4c9ffa70b66ec294e, type: 3}
-  - clip: {fileID: 8300000, guid: 287dbb847d795674ca1c866744b0ff80, type: 3}
+  - clip: {fileID: 8300000, guid: 0d346d7033f910246b974ea766cb84ce, type: 3}
     subtitle: "A glove, stained with blood. This was from the day I was building
       the treehouse. \nTom had begged for it for a week straight, like a mad little
       dreamer.\n A treehouse in our backyard. Did I build it? Yes. \nWood by wood,
@@ -3735,7 +3762,7 @@ MonoBehaviour:
       \nI feel peace. </b>\nPeace in my head. \nI destroyed the organization. \nI
       avenged my family. "
     gorsel: {fileID: 21300000, guid: aa3736e4753cbc74bbe88b2aa929fa3e, type: 3}
-  - clip: {fileID: 8300000, guid: ec79a06cc1079dc4f94af9c227aec186, type: 3}
+  - clip: {fileID: 8300000, guid: 53d57a710ac98b444be2bf802caf3e42, type: 3}
     subtitle: "It\u2019s all in my head.\r\nThey scream, tearing through what\u2019s
       left of my conscience.\r\nI killed. I killed them all. The innocents.\r\nNow
       I\u2019m alone In the dark.\r\nJust waiting to rot away.\r\nI can\u2019t bear
@@ -3841,7 +3868,7 @@ Transform:
   m_GameObject: {fileID: 1603663058}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.08, y: 1.54, z: 0}
+  m_LocalPosition: {x: 0.87, y: 0.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3918,7 +3945,7 @@ Transform:
   m_GameObject: {fileID: 1657714735}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.64, y: -0.52, z: 0}
+  m_LocalPosition: {x: 6.1, y: -0.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
