@@ -1,67 +1,81 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class EsyaDenetleyici : MonoBehaviour
 {
-    [Header("Geçerli Býrakma Noktalarý")]
-    public List<Transform> geçerliBýrakmaYerleri;
+    [Header("Býrakma Noktalarý")]
+    public List<Transform> gecerliBirakmaYerleri = new List<Transform>();
+    [Range(0.05f, 2f)] public float yakalamaMesafesi = 0.8f;
 
-    private Vector3 sonGecerliPozisyon;
-    private EsyaVerisi veri;
+    [Header("Ses ve Etkileþim")]
+    public AudioClip birakmaSesi;
+    private AudioSource sesKaynagi;
 
-    private void Start()
+    private Vector3 fareOfseti;
+    private Vector3 sonPozisyon;
+    private bool surukleniyor = false;
+    private Camera cam;
+
+    void Awake()
     {
-        sonGecerliPozisyon = transform.position;
-        veri = GetComponent<EsyaVerisi>();
+        cam = Camera.main;
+        sonPozisyon = transform.position;
+        sesKaynagi = FindObjectOfType<AudioSource>();
+    }
 
-        if (veri == null)
+    void OnMouseDown()
+    {
+        if (Input.GetMouseButtonDown(0))
         {
-            Debug.LogWarning("EsyaVerisi scripti eksik!");
+            Vector3 farePoz = FareDunyasi();
+            fareOfseti = transform.position - farePoz;
+            surukleniyor = true;
         }
     }
 
-    private void OnMouseDown()
+    void OnMouseDrag()
     {
-        if (veri == null || FlashbackYoneticisi.Ornek == null)
-            return;
-
-        // Flashback daha önce oynatýlmadýysa, þimdi oynat
-        if (!veri.flashbackOynatildi)
+        if (surukleniyor)
         {
-            veri.flashbackOynatildi = true;
-            FlashbackYoneticisi.Ornek.FlashbackGoster(veri.flashbackMetni);
+            Vector3 farePoz = FareDunyasi();
+            transform.position = farePoz + fareOfseti;
         }
     }
 
-
-    private void OnMouseUp()
+    void OnMouseUp()
     {
-        if (FlashbackYoneticisi.Ornek != null && FlashbackYoneticisi.Ornek.flashbackAktif)
-            return;
-
-        float minimumMesafe = 0.8f;
-        Transform enYakinYer = null;
-
-        foreach (Transform nokta in geçerliBýrakmaYerleri)
+        if (surukleniyor)
         {
-            float mesafe = Vector3.Distance(transform.position, nokta.position);
-            if (mesafe < minimumMesafe)
+            surukleniyor = false;
+            bool yerlesti = false;
+
+            foreach (var nokta in gecerliBirakmaYerleri)
             {
-                minimumMesafe = mesafe;
-                enYakinYer = nokta;
+                if (Vector3.Distance(transform.position, nokta.position) < yakalamaMesafesi)
+                {
+                    transform.position = nokta.position;
+                    yerlesti = true;
+
+                    if (birakmaSesi != null && sesKaynagi != null)
+                        sesKaynagi.PlayOneShot(birakmaSesi);
+
+                    FindObjectOfType<PlacementFlowManager>().EsyaYerlesinceCagir();
+                    break;
+                }
+            }
+
+            if (!yerlesti)
+            {
+                transform.position = sonPozisyon;
             }
         }
+    }
 
-        if (enYakinYer != null)
-        {
-            transform.position = enYakinYer.position;
-            sonGecerliPozisyon = enYakinYer.position;
-            Debug.Log("Doðru yere býrakýldý");
-        }
-        else
-        {
-            transform.position = sonGecerliPozisyon;
-            Debug.Log("Geçersiz yere býrakýldý");
-        }
+    Vector3 FareDunyasi()
+    {
+        Vector3 ekranPoz = cam.WorldToScreenPoint(transform.position);
+        Vector3 farePoz = Input.mousePosition;
+        farePoz.z = ekranPoz.z;
+        return cam.ScreenToWorldPoint(farePoz);
     }
 }
