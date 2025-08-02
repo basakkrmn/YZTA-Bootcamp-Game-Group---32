@@ -202,7 +202,7 @@ Gerçekleşen Puan: 100 puan
 ![Sprint 3](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/Trello3.png)
 
 *Oyunun Durumu*
-- Oyunun bütün mekanikleri ile bitmiştir.
+- Oyun bütün mekanikleri ile bitmiştir.
 - Oyunun görselleri bulunmuş ve oyuna konulmuştur.
 - Oyunun senaryosu yazılmış ve oyuna eklenmiştir.
 - Oyuna müzik ve ses eklenmiştir.
@@ -215,7 +215,7 @@ Gerçekleşen Puan: 100 puan
 *Sprint Review*
 
 Bu sprintte yapılanlar:
-- Oyunun bütün mekanikleri tamamlandı.
+- Oyun bütün mekanikleri tamamlandı.
 - Oyun için görseller eklendi.
 - Oyuna ses ve müzik eklendi.
 - Oyunun senaryosu yazıldı ve oyuna eklendi.
@@ -230,7 +230,7 @@ Bu sprintte yapılanlar:
 *Sprint Retrospective*
 
 İyi Gidenler:
-- Oyun tümüyle, uyumlu bir şekilde bitti.
+- Oyun tümüyle bitti.
 - İletişim kanalları etkin kullanıldı.
 - Herkesin aktif katılımı sağlandı.
 
