@@ -17,7 +17,7 @@
 | Mert Taşkın | Product Owner/Scrum Master |
 | Başak Karaman| Developer |
 | Berfu Tulgar| Developer |
-| Fundanur Öztürk| Developer |
+| Fundanur Öztürk| Developer (Ekipten Ayrıldı) |
 
 
 ##   Oyunun İsmi
@@ -176,4 +176,62 @@ Bu sprintte yapılanlar:
 - Oyunun mekanikleri uyumlu bir şekilde Unity içersinden yaratıldı.
 - İletişim kanalları etkin kullanıldı.
 - Herkesin aktif katılımı sağlandı.
+
+## Sprint 3 Raporu
+
+*Sprint İçinde Tamamlanması Tahmin Edilen Puan*
+Tahmin Edilen Tamamlanacak Puan: 100 puan
+Gerçekleşen Puan: 100 puan
+
+*Tahmin Mantığı*
+- Proje toplamda 300 puan olarak planlandı. Başlangıçta bu puan üç eşit sprint’e (100-100-100) bölündü.
+- Sprint 3'de yapılması gereken etapları tamamlayıp, 100 puana ulaştık.
+
+*Daily Scrum*
+
+- Takım üyeleri olarak WhatsApp üzerinden iletişim sağladık, iki-üç günde bir durumumuzu konuşmak için slack üzerinden toplantı gerçekleştirdik.
+- Genellikle akşam saatlerinde iletişim kurulmuştur.
+- İletişim Kanalları: WhatsApp grubu ve Slack'tir.
+
+*Sprint Board Updates*
+- Trello üzerinden sprint planlaması takip edilmiştir.
+
+
+*Sprint 3 Screenshot:*
+
+![Sprint 3](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/Trello3.png)
+
+*Oyunun Durumu*
+- Oyunun bütün mekanikleri ile bitmiştir.
+- Oyunun görselleri bulunmuş ve oyuna konulmuştur.
+- Oyunun senaryosu yazılmış ve oyuna eklenmiştir.
+- Oyuna müzik ve ses eklenmiştir.
+
+![Oyun Sahnesi 2](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/GameScene2.png)
+
+![Oyun Sahnesi 3](https://raw.githubusercontent.com/basakkrmn/YZTA-Bootcamp-Game-Group---32/refs/heads/main/GameScene3.png)
+  
+
+*Sprint Review*
+
+Bu sprintte yapılanlar:
+- Oyunun bütün mekanikleri tamamlandı.
+- Oyun için görseller eklendi.
+- Oyuna ses ve müzik eklendi.
+- Oyunun senaryosu yazıldı ve oyuna eklendi.
+
+*Sprint Katılımcıları*
+
+- Mert Taşkın (Product Owner/Scrum Master) - Aktif
+- Başak Kahraman (Developer) - Aktif
+- Berfu Tulgar (Developer) - Aktif
+- Fundanur Öztürk (Developer) - Pasif/Ekipten Ayrıldı
+
+*Sprint Retrospective*
+
+İyi Gidenler:
+- Oyun tümüyle, uyumlu bir şekilde bitti.
+- İletişim kanalları etkin kullanıldı.
+- Herkesin aktif katılımı sağlandı.
+
 
